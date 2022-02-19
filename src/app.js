@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 import "bootstrap";
 import "./style.css";
@@ -33,9 +32,10 @@ nuevo.appendChild(texto);
 
 ul.insertBefore(nuevo, ul.childNodes[3]);
 
-ul.removeChild(ul.firstElementChild);
-
 /*
 while (ul.firstChild) {
   ul.removeChild(ul.firstChild);
 }*/
+let todos = document.querySelectorAll("LI");
+todos[0].innerHTML = "hice un cambio";
+todos[todos.length - 1].innerHTML = "hice un cambio tambien";
